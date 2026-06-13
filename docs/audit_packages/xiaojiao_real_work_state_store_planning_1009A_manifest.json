@@ -1,0 +1,23 @@
+{
+  "package": "xiaojiao_real_work_state_store_planning_1009A",
+  "zip_entry_count": 13,
+  "zip_sha256": "DDC66461B420388D876236D9AC0324CF5B4DFB7C3109B06CD9870BA8BC9E629E",
+  "entries": [
+    "docs/audit/xiaojiao_real_work_state_store_planning_1009A_report.md",
+    "docs/audit/xiaojiao_real_work_state_store_planning_1009A_result.json",
+    "docs/foundation/xiaojiao_real_work_state_store_planning_1009A.json",
+    "docs/foundation/xiaojiao_real_work_state_store_planning_1009A.md",
+    "samples/xiaojiao_real_work_state_store_planning_1009A/cost_gate_policy_1009A.json",
+    "samples/xiaojiao_real_work_state_store_planning_1009A/event_log_schema_1009A.json",
+    "samples/xiaojiao_real_work_state_store_planning_1009A/preview_route_future_binding_plan_1009A.json",
+    "samples/xiaojiao_real_work_state_store_planning_1009A/store_boundary_policy_1009A.json",
+    "samples/xiaojiao_real_work_state_store_planning_1009A/teacher_review_gate_schema_1009A.json",
+    "samples/xiaojiao_real_work_state_store_planning_1009A/work_object_patch_schema_1009A.json",
+    "samples/xiaojiao_real_work_state_store_planning_1009A/work_object_schema_1009A.json",
+    "samples/xiaojiao_real_work_state_store_planning_1009A/work_state_schema_1009A.json",
+    "scripts/validate_xiaojiao_real_work_state_store_planning_1009A.py"
+  ],
+  "manifest_minus_zip": [],
+  "zip_minus_manifest": [],
+  "created_at": "2026-06-13T18:46:29.814050+00:00"
+}

@@ -1,0 +1,99 @@
+{
+  "schema_id": "work_state_schema_1009A",
+  "description": "Work State is the durable teacher work situation used by Xiaojiao to decide focus, not chat history or frontend UI state.",
+  "real_persistence_enabled": false,
+  "fields": [
+    {
+      "name": "work_state_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "teacher_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "teacher_role",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "grade",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "class_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "week",
+      "type": "integer",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "weekday",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "today_lessons",
+      "type": "array<lesson_ref>",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "current_priority_item",
+      "type": "object",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "current_surface",
+      "type": "surface_mode",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "current_work_object_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "updated_at",
+      "type": "datetime",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "version",
+      "type": "integer",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "source",
+      "type": "enum:mock_preview|sandbox_store|real_store",
+      "required": true,
+      "description": ""
+    }
+  ],
+  "not_chat_history": true,
+  "not_frontend_ui_state": true
+}

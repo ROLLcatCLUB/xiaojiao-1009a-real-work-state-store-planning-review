@@ -1,0 +1,72 @@
+{
+  "schema_id": "work_object_patch_schema_1009A",
+  "allowed_patch_types": [
+    "handout_candidate",
+    "lesson_section_patch_candidate"
+  ],
+  "fields": [
+    {
+      "name": "patch_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "patch_type",
+      "type": "enum",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "target_work_object_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "source",
+      "type": "enum:provider_sandbox_hardened|manual_fixture",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "provider_trace_ref",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "normalized_candidate_ref",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "teacher_review_required",
+      "type": "boolean",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "formal_apply_performed",
+      "type": "boolean",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "patch_status",
+      "type": "enum:created|pending_teacher_review|confirmed|deferred|discarded",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "created_at",
+      "type": "datetime",
+      "required": true,
+      "description": ""
+    }
+  ],
+  "direct_formal_apply_allowed": false,
+  "provider_response_direct_to_work_object_allowed": false,
+  "bypass_teacher_review_gate_allowed": false
+}

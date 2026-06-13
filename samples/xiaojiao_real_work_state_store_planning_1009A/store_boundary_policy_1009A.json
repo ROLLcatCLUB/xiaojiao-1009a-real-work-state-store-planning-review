@@ -1,0 +1,43 @@
+{
+  "policy_id": "store_boundary_policy_1009A",
+  "stage": "1009A_REAL_WORK_STATE_STORE_PLANNING",
+  "layers": {
+    "layer_1_read_only_preview_state": {
+      "allowed": [
+        "read fixture mock work state",
+        "generate render_directive",
+        "display preview route"
+      ],
+      "forbidden": [
+        "write database",
+        "write memory",
+        "write Feishu"
+      ]
+    },
+    "layer_2_sandbox_persistence_candidate": {
+      "future_allowed": [
+        "write local sandbox JSONL",
+        "write sqlite sandbox",
+        "dev audit only"
+      ],
+      "enabled_in_1009A": false
+    },
+    "layer_3_real_persistence": {
+      "future_allowed": [
+        "teacher scoped work state store",
+        "work object store",
+        "event log store",
+        "review gate store"
+      ],
+      "enabled_in_1009A": false
+    }
+  },
+  "real_persistence_enabled": false,
+  "database_written": false,
+  "memory_written": false,
+  "Feishu_written": false,
+  "formal_apply_performed": false,
+  "default_route_changed": false,
+  "provider_called": false,
+  "model_called": false
+}

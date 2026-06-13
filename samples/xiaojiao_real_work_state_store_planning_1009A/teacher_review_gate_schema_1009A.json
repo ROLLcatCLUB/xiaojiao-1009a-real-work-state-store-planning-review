@@ -1,0 +1,61 @@
+{
+  "schema_id": "teacher_review_gate_schema_1009A",
+  "fields": [
+    {
+      "name": "review_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "work_object_patch_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "review_status",
+      "type": "enum:pending|confirmed|revise_then_confirm|deferred|discarded",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "teacher_decision",
+      "type": "enum|null",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "decision_options",
+      "type": "array<enum>",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "reviewed_at",
+      "type": "datetime|null",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "final_apply_allowed",
+      "type": "boolean",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "formal_apply_performed",
+      "type": "boolean",
+      "required": true,
+      "description": ""
+    }
+  ],
+  "decision_options": [
+    "confirm",
+    "revise_then_confirm",
+    "defer",
+    "discard"
+  ],
+  "final_apply_allowed": false,
+  "formal_apply_performed": false
+}

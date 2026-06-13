@@ -1,0 +1,83 @@
+{
+  "schema_id": "work_object_schema_1009A",
+  "active_types_in_1009A": [
+    "lesson_design",
+    "handout",
+    "lesson_section",
+    "evidence_note"
+  ],
+  "reserved_types": [
+    "rubric",
+    "resource_ref",
+    "student_work_review_candidate"
+  ],
+  "fields": [
+    {
+      "name": "work_object_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "work_object_type",
+      "type": "enum",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "status",
+      "type": "enum:draft|candidate|confirmed|deferred|discarded",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "owner_teacher_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "related_lesson_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "content_snapshot",
+      "type": "object",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "candidate_refs",
+      "type": "array<string>",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "review_status",
+      "type": "enum:none|pending_teacher_review|confirmed|deferred|discarded",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "created_at",
+      "type": "datetime",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "updated_at",
+      "type": "datetime",
+      "required": true,
+      "description": ""
+    }
+  ],
+  "provider_response_direct_write_allowed": false
+}

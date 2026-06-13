@@ -1,0 +1,96 @@
+{
+  "schema_id": "event_log_schema_1009A",
+  "description": "Lightweight work evidence and operation trace, not a teacher paperwork burden.",
+  "fields": [
+    {
+      "name": "event_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "event_type",
+      "type": "enum",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "actor_type",
+      "type": "enum:teacher|xiaojiao|provider_sandbox|system",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "actor_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "work_state_id",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "work_object_id",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "action",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "summary",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "payload_ref",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "source",
+      "type": "enum:preview|sandbox|future_real_store",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "created_at",
+      "type": "datetime",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "privacy_level",
+      "type": "enum:teacher_private|school_internal|redacted_audit",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "teacher_review_required",
+      "type": "boolean",
+      "required": true,
+      "description": ""
+    }
+  ],
+  "supported_event_types": [
+    "open_preview",
+    "open_lesson_focus",
+    "generate_candidate",
+    "receive_provider_candidate",
+    "create_work_object_patch",
+    "enter_teacher_review_gate",
+    "teacher_confirm",
+    "teacher_defer",
+    "add_light_record_tag"
+  ],
+  "real_event_log_write_enabled": false
+}

@@ -1,0 +1,21 @@
+{
+  "policy_id": "cost_gate_policy_1009A",
+  "inherited_from": "1008M",
+  "cost_gate_incomplete": true,
+  "estimated_cost_cny": null,
+  "provider_cost_policy": {
+    "provider_pricing_config_required": true,
+    "per_action_budget_placeholder": {
+      "generate_handout_candidate": null,
+      "shorten_second_activity_candidate": null
+    },
+    "cost_estimator_required_before_batch_generation": true
+  },
+  "no_background_generation_until_cost_gate_pass": true,
+  "no_bulk_generation_until_cost_gate_pass": true,
+  "batch_generation_allowed": false,
+  "background_generation_allowed": false,
+  "multi_class_auto_generation_allowed": false,
+  "default_route_provider_auto_call_allowed": false,
+  "teacher_explicit_trigger_required": true
+}

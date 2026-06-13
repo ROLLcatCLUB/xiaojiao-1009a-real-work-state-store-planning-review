@@ -1,0 +1,25 @@
+{
+  "plan_id": "preview_route_future_binding_plan_1009A",
+  "current_preview_route": "frontend/xiaojiao-preview.html",
+  "current_preview_state_source": "mock/in-memory",
+  "future_state_source": "work_state_store",
+  "binding_plan": [
+    "Work State Store loads teacher scoped work_state.",
+    "Composer derives render_directive from work_state and active work_objects.",
+    "Preview renderer consumes render_directive without deciding business focus.",
+    "Teacher review gate state controls whether candidate patches can be applied in later stages."
+  ],
+  "rollback_plan": [
+    "Keep current mock preview fixture available.",
+    "Do not switch default route.",
+    "Preserve old strong Agent page.",
+    "Disable store binding behind preview-only flag if sandbox store fails."
+  ],
+  "migration_risk": [
+    "schema drift between mock render_directive and future store objects",
+    "cost gate incomplete may block provider-backed bulk flows",
+    "event log can become paperwork-like if not kept lightweight"
+  ],
+  "real_frontend_runtime_modified": false,
+  "default_route_changed": false
+}
